@@ -1,0 +1,487 @@
+:root{
+    --color-verde: rgb(155, 240, 11);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+}
+
+/*HEADER*/
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container-header{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: var(--color-verde);
+    text-decoration: underline;
+}
+
+.container-header-vendaXbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 16px;
+}
+
+.price{
+    font-style: italic;
+
+}
+
+.logo{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navegacao{
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.menuDeCompra{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.fa-chevron-down{
+    color: rgb(180, 180, 180);
+    text-decoration: none;
+}
+
+.buyNow-button{
+    width: 150px;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--color-verde);
+    background-color: transparent;
+    border: 1px solid;
+    transition: all 0.5s normal;
+    cursor: pointer;
+}
+
+.fa-chevron-right{
+    transition: all 0.5s normal;
+}
+
+.buyNow-button-mobile{
+    width: 125px;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--color-verde);
+    background-color: transparent;
+    border: 1px solid;
+    transition: all 0.5s normal;
+    cursor: pointer;
+    text-decoration: none;
+    display: none;
+}
+
+.mobile{
+    display: none;
+}
+
+.mobile-nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50px;
+    gap: 0px;
+    margin-left: -50px;
+    display: none;
+}
+
+.mobile-nav li{
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*FIM-HEADER*/
+
+/*MENU*/
+
+.menu{
+    top: 35px;
+    margin-left: -330px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.list-item2, .list-item3{
+    border: 3px solid transparent;
+}
+
+.menu ul li:hover{
+    color: var(--color-verde);
+    text-decoration: underline;
+}
+
+.list-item1{
+    border: 3px solid var(--color-verde);
+    text-decoration: underline;
+    color: var(--color-verde);
+}
+
+/*FIM-MENU*/
+
+/*BANNER*/
+
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://assets.xboxservices.com/assets/d8/36/d83647e8-269a-47b0-a992-e7ab2fd42d00.jpg?n=642227_Hero-Background-Image-1400_Light-BG_1920x1250.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-banner{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container-banner-content{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    color: white;
+}
+
+.container-banner-content h1{
+    font-size: 86px;
+    font-weight: 900;
+    width: 90%;
+    line-height: 80px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.parallelogram {
+    width: 60px;
+    height: 10px;
+    background: var(--color-verde);
+    transform: skewX(-40deg);
+    cursor: default;
+}
+
+.banner-content-title{
+    margin-bottom: 20px;
+}
+
+.banner-content-subtitle{
+    font-size: 34px;
+    font-weight: 700;
+    cursor: default;
+}
+
+.container-banner-content-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-banner-content-button button{
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+}
+
+.button2, .button3{
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.button1{
+    border: 3px solid var(--color-verde);
+}
+
+.container-banner-content-button button:hover{
+    text-decoration: underline;
+}
+
+.banner-price{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: default;
+}
+
+.buyNow-button-banner{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    width: 150px;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    color: rgb(5, 75, 22);
+    background-color: var(--color-verde);
+    border: 1px solid;
+    transition: all 0.5s normal;
+    cursor: pointer;
+}
+
+.container-banner-img{
+    height: 90%;
+    width: 50%;
+}
+
+.imagem-xbox{
+    width: 120%;
+}
+/*FIM-BANNER*/
+
+@media (max-width: 1600px) {
+    .imagem-xbox{
+        width: 150%;
+    }
+
+
+}
+
+@media (min-width: 1351px){
+    .mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 1350px){
+
+    .mobile{
+        display: block;
+    }
+
+    .logo{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navegacao{
+        display: none;
+    }
+
+    .imagem-xbox{
+        width: 100%;
+    }
+
+    .banner{
+        background-image: url(https://assets.xboxservices.com/assets/65/69/6569a6ce-e9a0-4c5e-9a29-ae4b90d033a7.jpg?n=642227_Hero-Background-Image-768_Light-BG_1083x635.jpg);
+        background-size: cover;
+    }
+
+    .container-banner{
+        margin-top: 45%;
+        width: 100%;
+        height: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-banner-content{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-banner-content-button{
+        flex-direction: column;
+    }
+
+    .container-banner-content-button button{
+        width: 400px;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .banner-content-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-content-subtitle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-content-title h1{
+        font-size: 50px;
+        width: 100%;
+        margin-bottom: -1px;
+    }
+
+    .banner-price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 985px){
+
+    .buyNow-button-mobile{
+        display: block;
+    }
+
+    .container-header ul{
+        padding: 0px;
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+
+    .container-banner-img{
+        display: flex;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imagem-xbox{
+        width: 70%;
+    }
+
+    .banner-content-title{
+        width: 200%;
+        text-align: center;
+    }
+
+    .container-header-vendaXbox{
+        display: none;
+    }
+
+    .banner-content-subtitle{
+        width: 200%;
+        text-align: center;
+    }
+
+    .container-banner-content-button button{
+        width: 240%;
+    }
+}
+
+@media (max-width: 450px){
+
+    .buyNow-button-mobile{
+        padding: 5px;
+        font-size: 12px;
+        width: 110px;
+    }
+
+    .container-banner{
+        margin-top: 100%;
+    }
+
+    .banner-content-title h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 450px){
+
+    .banner-content-title h1{
+        font-size: 30px;
+    }
+
+    .banner-content-subtitle{
+        font-size: 30px;
+    }
+
+    .banner-price{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    .buyNow-button-banner{
+        color: black;
+    }
+}
